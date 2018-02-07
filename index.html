@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>恒昌</title>
+  <meta name="viewport" id="viewport" content="width=414,user-scalable=no">
+  <link rel="stylesheet" href="css/gb.min.css"/>
+  <link rel="stylesheet" href="css/magic.min.css"/>
+  <link rel="stylesheet" href="css/animate.css"/>
+  <link rel="stylesheet" href="css/keys.css?v=31111"/>
+  <link rel="stylesheet" href="css/index.css?v=1133"/>
+  <script>
+    var phoneWidth = parseInt(window.screen.width);
+    var phoneScale = phoneWidth / 414;
+    var ua = navigator.userAgent;
+    if (/Android (\d+\.\d+)/.test(ua)) {
+      var version = parseFloat(RegExp.$1);            // andriod 2.3
+      if (version > 2.3) {
+        document.getElementById("viewport").content = 'width=414, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', ';                // andriod 2.3以上
+      } else {
+        document.getElementById("viewport").content = "width=414";
+      }
+    } else {
+      document.getElementById("viewport").content = "width=414, user-scalable=no";
+    }
+  </script>
+</head>
+<body class="scene">
+<div data-depth="0.10" class="bg layer">
+  <img data-src="images/p1-topyun.png" class="img top-yun animated fadeInDown hidden">
+  <img data-src="images/p1-bottomyun.png" class="img bottom-yun animated fadeInUp hidden">
+</div>
+<div data-depth="0.20" class="bg layer">
+  <img data-src="images/p1-toplight.png" class="img top-yun animated fadeInDown hidden">
+  <img data-src="images/p1-bottomlight.png" class="img bottom-yun animated fadeInUp hidden">
+</div>
+<div class="loading">
+  <div class="mid" id="mid">
+    <img class="xian" src="images/p1-xian.png">
+    <img class="out" src="images/p1-waihuan.png" id="p1out">
+    <img class="in" src="images/p1-neihuan.png" id="p1in">
+    <img class="inin" src="images/p1-neinei.png" id="p1inin">
+  </div>
+  <div class="load-text" id="loadT">
+    <div class="load-img"></div>
+    <span id="loadText"></span>
+  </div>
+  <img class="line" src="images/p1-3.png" id="loadLine">
+</div>
+<div class="p p2">
+  <img data-src="images/logo.png" id="logo" class="img logo magictime perspectiveUpRetourn">
+  <img id="p2Hlogo" data-src="images/hulian-logo.png" class="img hl-logo magictime puffIn and-200">
+  <img id="p2T1" data-src="images/p2-text-1.png" class="img t1 magictime spaceInRight and-300">
+  <img id="p2T2" data-src="images/p2-text-2.png" class="img t2 magictime spaceInLeft and-400">
+  <img id="p2K" data-src="images/p2-start-kuang.png" class="img p2k magictime swashIn and-500">
+  <img id="p2S" data-src="images/p2-text-start.png" class="img p2t magictime swashIn and-500">
+  <img id="p2Q" data-src="images/p2-qiu.png" class="img p2q animated fadeInUp and-300">
+</div>
+<div class="p p3">
+  <img data-src="images/p3-top.png" class="img p3-top animated fadeInRight and-300">
+  <img data-src="images/p3-k.png" class="img p3-k magictime puffIn and-400">
+  <img data-src="images/p3-img.png" class="img p3-img magictime perspectiveUpRetourn and-500">
+  <img data-src="images/p3-textk.png" class="img p3-textk animated fadeInRight and-600">
+  <img data-src="images/p3-left.png" class="img p3-left animated fadeInLeft and-700">
+  <img data-src="images/p3-right.png" class="img p3-right animated fadeInRight and-800">
+  <div class="p3-yuan-1" class="img"></div>
+  <div class="p3-yuan-2" class="img"></div>
+  <div class="p3-text magictime slideUpRetourn">
+    &nbsp;&nbsp;&nbsp;&nbsp;第四届世界互联网大会将于12月3日至5日在浙江乌镇举办。本届大会将汇集400余家全球知名的互联网企业和创新型企业，集中展示世界互联网最新的发展趋势和前沿技术，发布一批本年度全球互联网领域最领先的科技成果，包括阿里无人超市、远传智能机器人等。
+  </div>
+</div>
+<div class="p p4">
+  <img data-src="images/p4-top.png" class="img p4-top animated fadeInRight and-300">
+  <img data-src="images/p4-logo.png" class="img p4-logo animated fadeInRight and-300 p4-hide">
+  <img data-src="images/p4-light.png" class="img p4-light animated fadeInRight and-300 p4-hide">
+  <img data-src="images/p4-midlight.png" class="img p4-mid animated fadeInRight and-300 p4-hide">
+  <img data-src="images/p4-t1.png" class="img p4-t1 animated fadeInRight and-300 p4-hide">
+  <img data-src="images/p4-t2.png" class="img p4-t2 animated fadeInRight and-300 p4-hide">
+  <img data-src="images/p4-t3.png" id="p4t3" class="img p4-t3 animated fadeInRight and-300">
+  <img data-src="images/p4-path.png" class="img p4-path animated fadeInRight and-300 p4-hide">
+  <img data-src="images/p4-yuan.png" class="img p4-yuan-1 animated fadeInRight and-300 p4-hide">
+  <img data-src="images/p4-yuan.png" class="img p4-yuan-2 animated fadeInRight and-300 p4-hide">
+  <img data-src="images/p4-yuan.png" class="img p4-yuan-3 animated fadeInRight and-300 p4-hide">
+  <img data-src="images/p4-bottom-2.png" class="img p4-bottom animated fadeInRight and-300">
+</div>
+<div class="p p5">
+  <div class="p5-content">
+    <img data-src="images/p5-t1.png" class="img p5-t1 animated fadeInRight and-300">
+    <img data-src="images/p5-t2.png" class="img p5-t2 animated fadeInRight and-300">
+  </div>
+</div>
+<div class="p p6">
+
+</div>
+<div class="p p7">
+
+</div>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/touch.min.js"></script>
+<script src="js/index.js?v=3434"></script>
+</body>
+</html>
